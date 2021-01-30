@@ -1,0 +1,280 @@
+<!doctype html>
+<html lang="en">
+
+<!--
+WRITTEN BY: John Quinzon
+EMAIL: jquinzon@uci.edu
+-->
+
+<head>
+  <meta charset="utf-8">
+  <meta name="author" content="John Quinzon">
+  <meta name="description" content="description of your page">
+   <!-- you would link to an external stylesheet here! -->
+  <link rel="stylesheet" href="css/bootStrapEdits.css">
+  <link rel="stylesheet" href="css/mains.css">
+  <link rel="stylesheet" href="css/icons.css">
+  <link rel="stylesheet" href="css/animations.css">
+
+  <script src="https://kit.fontawesome.com/f6e9b34e73.js" crossorigin="anonymous"></script>
+  <link href='http://fonts.googleapis.com/css?family=Overpass' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Roboto+Mono' rel='stylesheet' type='text/css'>
+  <!-- you would also link to Bootstrap here! -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+
+  <title>JQ</title>
+</head>
+<body>
+
+ <div class="container-fluid ">
+     <!-- NAV BAR  -->
+     <nav class="navbar navbar-expand-lg">
+     <a class="navbar-brand  font-weight-bold fadeIn-Right" href="#">JQ.</a>
+     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar">
+         <em class="fas fa-bars"></em>
+     </button>
+     <div class="collapse navbar-collapse" id="navbar">
+       <ul class="navbar-nav ml-auto">
+           <li class="nav-item fadeIn-Left " >
+             <a class="nav-link" href="#About" id="About-link">
+               <span class="link-number">01.</span> About
+             </a>
+           </li>
+           <li class="nav-item fadeIn-Left">
+             <a class="nav-link" href="#Experience">
+               <span class="link-number">02.</span> Experience
+             </a>
+           </li>
+           <li class="nav-item fadeIn-Left">
+            <a class="nav-link" href="#Projects">
+              <span class="link-number">03.</span> Project
+            </a>
+          </li>
+           <li class="nav-item  fadeIn-Left">
+             <a class="nav-link" href="#Contact">
+               <span class="link-number">04.</span>Contact
+             </a>
+           </li>
+
+       </ul>
+     </div>
+   </nav>
+
+     <!-- SIDEBAR -->
+     <div class="d-none d-lg-block" id="contact-wrapper">
+         <ul id="contact-list">
+            <li>
+                <a class="nav-link" href="https://github.com/jzquinzon">
+                    <em class="fab fa-github contact-bar-icon" ></em>
+                </a>
+            </li>
+            <li>
+                <a class="nav-link" href="https://www.linkedin.com/in/johnquinzon/">
+                    <em class="fab fa-linkedin  contact-bar-icon"></em>
+                </a>
+            </li>
+             <li>
+                <a class="nav-link" href="https://www.instagram.com/jzquinzon/">
+                    <em class="fab fa-instagram  contact-bar-icon"></em>
+                </a>
+            </li>
+             <li>
+                <a class="nav-link " href="#Contact">
+                    <em class="fas fa-envelope contact-bar-icon"></em>
+                </a>
+             </li>
+        </ul>
+         <div id="contact-line"></div>
+     </div>
+
+     <div class="d-none d-lg-block" id="email-wrapper">
+         <a href="#Contact" id="email">jquinzon@uci.edu</a>
+         <div id="email-line"></div>
+     </div>
+
+     <!-- JUMBOTRON -->
+     <div class="container center">
+         <div class="jumbotron bg-transparent middle col-12">
+            <p class="welcome">
+                <span id="welcome"></span><span class="cursor1" style="animation-delay: 0ms">|</span>
+            </p>
+             <h2 class="display-2 font-weight-bold">
+                 <span id = "name"></span><span class="cursor2" style="animation-delay: 1000ms">|</span>
+             </h2>
+             <h3 class="display-4 font-weight-bold">
+                 <span id = "msg"></span><span class="cursor3" style="animation-delay: 2100ms">|</span>
+             </h3>
+             <p class="fadedBlue fadeIn-Above" style="animation-delay: 3300ms"><br>
+                 I'm a full-stack developer from San Diego, CA<br>
+                 who is passionate about building web applications<br>
+                 and programs that improves the lives of others.<br>
+                 Please take a look around ! <br>
+             </p>
+            <a  class="btn btn-lg bg-transparent fadeIn" href="#About">
+              <span class="fas fa-angle-down"></span>
+            </a>
+         </div>
+     </div>
+
+     <!-- ABOUT ME -->
+     <div class="container about-me" id="About">
+         <div class="jumbotron bg-transparent section">
+             <div>
+                 <span class="section-number">01.</span> <span class = "section-text">About Me</span>
+                 <svg width="400" height="2">
+                     <rect class="section-line" width="300" height="2" />
+                 </svg>
+             </div>
+             <div class="row" style="padding-top: 25px">
+                 <div class="col-md-7">
+                     <p class="section-paragraph" style="font-weight: bold">
+                         I'm a software engineer from San Diego, CA. <br><br>
+
+                         My favorite aspect of software engineer is turning
+                         complex problems into effective and efficient programs. My current goal is to work for a company and
+                         build meaningful projects.<br><br>
+
+                         I graduated from the <span class="skill">Donald Bren School of Information and Computer Science</span>
+                         at the <span class="skill">University of California, Irvine </span>, and I'm currently looking for new opportunities to exercise my skills
+                         and further my experiences.<br><br>
+
+                         When I'm not coding, you'll find me power-lifting, playing basketball, or playing video games.
+                     </p>
+                 </div>
+                 <div class="col-md-3">
+                     <div id="portrait">
+                         <img src="assets/portrait.jpg" alt="SELF PORTRAIT" id="portrait-picture">
+                         <p id="portrait-rectangle"></p>
+                     </div>
+                 </div>
+         </div>
+     </div>
+     </div>
+     <!-- EXPERIENCE -->
+     <div class="container" id="Experience">
+         <div class="jumbotron bg-transparent">
+             <div>
+                 <span class="section-number">02.</span> <span class = "section-text">Experience & Skills</span>
+                 <svg width="400" height="2">
+                    <rect class="section-line" width="300" height="2" />
+                 </svg>
+             </div>
+             <div class="row">
+                 <div class="col-sm" >
+                     <h1 class="section-paragraph">
+                         <span style="font-weight: bold"><br>SOFTWARE DEVELOPER INTERN </span><span class="company-name">@ ARBOR-NOTE</span>
+                     </h1>
+                     <p class="section-paragraph">
+                         <span  style="font-size: 13px;">July 2019 - November 2019 </span>
+                     </p>
+                     <ul class="section-paragraph-list fa-ul">
+                         <li><span class="fa-li"><em class="fas fa-caret-right"></em></span>Convert legacy Flash based web applications to HTML5.</li>
+                         <li><span class="fa-li"><em class="fas fa-caret-right"></em></span>Design front-end applications using HTML5/CSS, JS.</li>
+                         <li><span class="fa-li"><em class="fas fa-caret-right"></em></span>Worked in a team to redesign and redevelop an existing website.</li>
+                     </ul>
+                 </div>
+                 <div class="col-sm" >
+
+                     <p class="section-paragraph">
+                         <span >Technology I've been working with:</span>
+                     </p>
+                     <ul class="section-paragraph-list fa-ul">
+                         <li><span class="fa-li"><em class="fas fa-caret-right "></em></span><span class="skill">HTML & CSS</span></li>
+                         <li><span class="fa-li"><em class="fas fa-caret-right"></em></span><span class="skill">JavaScript</span></li>
+                         <li><span class="fa-li"><em class="fas fa-caret-right"></em></span><span class="skill">Java</span></li>
+                     </ul>
+                 </div>
+             </div>
+         </div>
+     </div>
+
+     <!-- PROJECTS -->
+     <div class="container" id="Projects">
+         <div class="jumbotron bg-transparent">
+             <div>
+                 <span class="section-number">03.</span> <span class = "section-text">Projects</span>
+                 <svg width="400" height="2">
+                     <rect class="section-line" width="300" height="2" />
+                 </svg>
+             </div>
+             <!-- FABFLIX -->
+             <div class="row">
+                 <div class="col-md" >
+                     <div id="fabflix" class="project">
+                         <img src="assets/fabflix.jpg" alt="FABFLIX PROJECT" id="fabflix-picture" class="project-picture project-picture-right">
+                         <p id="fabflix-rectangle" class="project-rectangle"></p>
+                     </div>
+                 </div>
+                 <div class="col-md" >
+                     <div id="fabflix-description" class="project-description">
+                         <h1 class="section-paragraph">
+                             <span style="font-weight: bold"></span><span class="company-name" style="font-size: 25PX"><br>FABFLIX</span>
+                         </h1>
+                         <p class="section-paragraph">
+                             <span  style="font-size: 13px;">January 2019 - March 2019 </span>
+                         </p>
+                         <ul class="section-paragraph-list fa-ul">
+                             <li><span class="fa-li"><em class="fas fa-caret-right"></em></span>Implemented the backend of a pseudo-Netflix full-stack web application built
+                                 on gradle.</li>
+                             <li><span class="fa-li"><em class="fas fa-caret-right"></em></span>Built and maintained RESTful API for each microservice.</li>
+                             <li><span class="fa-li"><em class="fas fa-caret-right"></em></span>Developed front-end functionality .(HTML/CSS, JavaScript)</li>
+                             <li><span class="fa-li"><em class="fas fa-caret-right"></em></span>Allows users to browse, search, purchase, login.</li>
+                         </ul>
+                     </div>
+                 </div>
+             </div>
+             <!-- JQSPOTIFY -->
+             <div class="row">
+                 <div class="col-md" >
+                     <div id="jqSpotify-description" class="project-description">
+                         <h1 class="section-paragraph">
+                             <a href="https://jq-spotify.herokuapp.com" style="text-decoration: none" target="_blank"><span style="font-weight: bold"></span><span class="company-name" style="font-size: 25PX"><br>JQ SPOTIFY</span></a>
+                         </h1>
+                         <p class="section-paragraph">
+                             <span  style="font-size: 13px;">September 2020 - January 2021 </span>
+                         </p>
+                         <ul class="section-paragraph-list fa-ul">
+                             <li><span class="fa-li"><em class="fas fa-caret-right"></em></span>A web application for users to access personalized Spotify data.</li>
+                             <li><span class="fa-li"><em class="fas fa-caret-right"></em></span>Communicates with the Spotify Web API to gather users Spotify Data.</li>
+                             <li><span class="fa-li"><em class="fas fa-caret-right"></em></span>Designed and developed front-end functionality utilizing JavaScript, CSS, and Angular</li>
+                             <li><span class="fa-li"><em class="fas fa-caret-right"></em></span>Users can view Artist, Track, Album, and Personal pages.</li>
+                         </ul>
+                     </div>
+                 </div>
+                 <div class="col-md" >
+                     <div id="jqSpotify" class="project">
+                         <img src="assets/jqSpotify.jpg" alt="FABFLIX PROJECT" id="jqSpotify-picture" class="project-picture">
+                         <p id="jqSpotify-rectangle" class="project-rectangle project-rectangle-right"></p>
+                     </div>
+                 </div>
+             </div>
+
+         </div>
+     </div>
+
+     <!-- CONTACT -->
+     <div class="container Experience" id="Contact">
+         <div class="jumbotron bg-transparent">
+             <div>
+                 <span class="section-number">04.</span> <span class = "section-text">Say Hello!</span>
+                 <svg width="400" height="2">
+                     <rect class="section-line" width="300" height="2" />
+                 </svg>
+             </div>
+                 <form action="mailto:jquinzon@uci.edu" method="post" enctype="text/plain" id="contact-form" class="col-12">
+                     <input type="submit" value="Contact">
+
+                 </form>
+         </div>
+     </div>
+ </div>
+
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="js/script.js"></script>
+</body>
+</html>

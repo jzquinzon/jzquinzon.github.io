@@ -1,0 +1,23 @@
+@import "animations.css";
+@import "mains.css";
+
+.fa-angle-down {
+    color: #8695b7 !important;;
+    font-size: 80px;
+    animation: bounce 2s infinite;
+}
+
+.fa-angle-down:hover {
+    color: #6679a4 !important;
+}
+
+
+.fa-github:hover, .fa-linkedin:hover, .fa-instagram:hover, .fa-envelope:hover{
+    color:white !important;
+    transform: translateY(-3px);
+    padding: 3px;
+}
+
+.fa-bars {
+    color: var(--faded-blue);
+}

@@ -1,0 +1,134 @@
+/* BOUNCE */
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% { transform: translateY(0);}
+    40% { transform: translateY(-15px);}
+    60% { transform: translateY(-7.5px);}
+}
+
+/* SLIDE RIGHT */
+.slideRight {
+    animation: slideLeft 2s;
+}
+
+@keyframes slideRight {
+    0% {
+        transform: translateX(-2vw);
+    }
+    100%{
+        transform: translateX(0vw);
+    }
+
+}
+
+/* SLIDE LEFT */
+.slideLeft {
+    animation: slideLeft 1s;
+}
+
+@keyframes slideLeft {
+    0% {
+        transform: translateX(2vw);
+    }
+    100%{
+        transform: translateX(0vw);
+    }
+
+}
+
+/* SLIDE ABOVE */
+.slideAbove {
+    animation: slideAbove 1s;
+}
+
+@keyframes slideAbove {
+    0% {
+        transform: translateY(-2vw);
+    }
+    100%{
+        transform: translateY(0vw);
+    }
+
+}
+
+/* FADE IN */
+.fadeIn {
+    animation: fadeIn 4s;
+    animation-fill-mode: both;
+
+}
+
+@keyframes fadeIn {
+    0% ,90%{ opacity: 0;}
+    100%{ opacity: 1;}
+}
+
+/* FADE IN LEFT */
+.fadeIn-Left{
+    animation: fadeIn .5s backwards, slideLeft 2s backwards;
+}
+
+
+/* FADE IN RIGHT */
+.fadeIn-Right{
+    animation: fadeIn .5s backwards, slideRight 1s backwards;
+}
+
+/* FADE IN ABOVE */
+.fadeIn-Above{
+    animation: fadeIn .5s backwards, slideRight 1s backwards;
+}
+
+/* FADE IN ABOVE */
+.fadeIn-Above{
+    animation: fadeIn .5s backwards, slideAbove 1s backwards ;
+}
+
+/* CURSORS */
+
+.cursor1 {
+    color: white;
+    opacity: 0%;
+    animation: cursor .5s 1 forwards;
+}
+.cursor2 {
+    color: white;
+    opacity: 0%;
+    animation: cursor .5s 2 forwards;
+}
+.cursor3 {
+    color: white;
+    opacity: 0%;
+    animation: cursor .5s 3 forwards;
+}
+@keyframes cursor {
+    0%,100% { opacity: 0 ;}
+    50%{ opacity: 100% ;}
+
+}
+
+@keyframes portrait-animation {
+    0% {
+        transform: translate(0px,0px);
+    }
+    100% {
+        transform: translate(-5px,-5px);
+    }
+}
+
+@keyframes project-animation-toRight {
+    0% {
+        transform: translate(0px,0px);
+    }
+    100% {
+        transform: translate(5px,-5px);
+    }
+}
+
+@keyframes project-animation-toLeft {
+    0% {
+        transform: translate(0px,0px);
+    }
+    100% {
+        transform: translate(-5px,-5px);
+    }
+}

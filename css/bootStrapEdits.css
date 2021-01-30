@@ -1,0 +1,21 @@
+@import "mains.css";
+
+/* NAVBAR CHANGES */
+.navbar{
+    font-size: 1.5em;
+}
+.navbar-brand {
+    color: rgb(92, 207, 230);
+}
+
+.navbar-nav .nav-link {
+    color:white
+}
+
+.nav-link:hover {
+    color: var(--faded-blue);
+}
+
+.navbar-collapse.toggled {
+    background-color: var(--dark-blue);
+}

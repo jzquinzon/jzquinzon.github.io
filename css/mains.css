@@ -1,0 +1,277 @@
+@import "animations.css";
+
+:root {
+    --dark-blue: #171c28 !important;
+    --faded-blue: #8695b7 !important;
+    --faded-blue-opacity-low: rgba(134, 149, 183, 0.15) !important;;
+    --faded-yellow: #ffcc66 !important;
+    --teal-blue: #5ccfe6 !important;
+}
+
+html, body{
+    background-color: #171c28 !important;
+    font-family: 'Overpass', sans-serif !important;
+    height: 100%;
+    scroll-behavior: smooth;
+}
+
+.link-number {
+    color: var(--teal-blue) !important;
+    font-family: 'Roboto Mono', sans-serif !important;
+}
+
+.fadedBlue {
+    color: #8695b7 !important;
+}
+
+.invisible {
+    opacity: 0;
+}
+
+
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:100vh;
+    /*border: 3px solid green;*/
+}
+
+
+
+.section-number{
+    color: var(--teal-blue);
+    font-size: 24px;
+    font-family: 'Roboto Mono', sans-serif !important;
+}
+
+.section-text {
+    color: rgba(255, 255, 255, 0.9) !important;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.section-paragraph {
+    color: var(--faded-blue);
+    font-size: 17px;
+}
+.section-line {
+    fill:var(--faded-blue-opacity-low);
+    stroke-width:0;
+}
+
+.company-name{
+    font-size: 19px;
+    color: var(--teal-blue);
+    font-weight: bold;
+}
+
+.section-paragraph-list {
+    color: var(--faded-blue);
+    font-size: 17px;
+}
+#welcome {
+    color: var(--faded-blue);
+}
+
+#name {
+    color: white !important;
+}
+
+#msg{
+    color: var(--faded-blue) !important;
+}
+
+
+/* ABOUT ME SECTIONS----------------------------------------------------------------- */
+.about-me .jumbotron {
+    padding-top: 0;
+}
+#portrait{
+    position: relative;
+    height: 400px;
+    width: 400px;
+}
+
+#portrait-picture {
+    position: absolute;
+    height: 300px;
+    width: 300px;
+    border-radius: 10px;
+    background: rgba(0, 255, 255, 0.5);
+    filter: blur(3px) hue-rotate(90deg) grayscale(100%) saturate(300%);
+    z-index: 15;
+}
+
+#portrait-rectangle{
+    position: absolute;
+    margin-top: 25px;
+    margin-left: 25px;
+    border-radius: 10px;
+    border: 2px solid var(--faded-blue);
+    width: 300px;
+    height: 300px;
+    z-index: 10;
+}
+
+#portrait:hover > #portrait-rectangle {
+    animation: portrait-animation .3s ease-in both;
+}
+
+#portrait:hover > #portrait-picture {
+    filter: blur(0px) hue-rotate(0deg) grayscale(0%) saturate(100%);
+}
+
+/* -----END ABOUT ME SECTIONS ---------*/
+
+.skill{
+    color: var(--teal-blue);
+    font-weight: bold;
+}
+
+#welcome {
+    color: var(--teal-blue) !important;
+    font-weight: bold;
+}
+
+
+/*  CONTACT BAR----------------------------------------------------------------- */
+
+#contact-wrapper {
+    position: fixed;
+    bottom: 0%;
+    left: 0%;
+    font-size: 1.5em;
+    color: var(--dark-blue);
+    display: table-column;
+    justify-content: center;
+    align-items: center;
+}
+
+#contact-line {
+    height: 100px;
+    width: 1px;
+    border: 1px solid rgba(134, 149, 183, 0.55);
+    margin-left: 40%;
+    margin-top: 0;
+
+}
+
+#contact-list {
+    padding: 0px;
+}
+
+
+.contact-bar-icon {
+    color: #8695b7 !important;
+}
+
+/*  EMAIL BAR----------------------------------------------------------------- */
+
+#email-wrapper {
+    position: fixed;
+    bottom: 0%;
+    right: 0%;
+    font-size: 1.25em;
+    color: var(--dark-blue);
+    display: table-column;
+    justify-content: center;
+    align-items: center;
+}
+
+#email-line {
+    height: 100px;
+    width: 1px;
+    border: 1px solid rgba(134, 149, 183, 0.55);
+    padding: 0;
+    margin-left: 50%;
+
+}
+
+#email {
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    color: var(--faded-blue);
+}
+
+/* PROJECTS----------------------------------------------------------------- */
+.project{
+    position: relative;
+    height: 400px;
+    width: 400px;
+}
+
+.project-picture {
+    position: absolute;
+    height: 300px;
+    width: 400px;
+    /*margin-left: 25px;*/
+    border-radius: 10px;
+    background: rgba(0, 255, 255, 0.5);
+    filter: blur(3px) hue-rotate(90deg) grayscale(100%) saturate(300%);
+    z-index: 15;
+}
+.project-picture-right {
+    margin-left: 25px;
+}
+
+.project-rectangle{
+    position: absolute;
+    margin-top: 25px;
+    /*margin-left: 25px;*/
+    border-radius: 10px;
+    border: 2px solid var(--faded-blue);
+    width: 400px;
+    height: 300px;
+    z-index: 10;
+}
+.project-rectangle-right{
+    margin-left: 25px;
+}
+
+.project-description{
+    position: relative;
+}
+
+.project:hover > .project-rectangle {
+    animation: project-animation-toRight .3s ease-in both;
+}
+.project:hover > .project-rectangle-right {
+    animation: project-animation-toLeft .3s ease-in both;
+}
+
+.project:hover > .project-picture {
+    filter: blur(0px) hue-rotate(0deg) grayscale(0%) saturate(100%);
+}
+
+
+/* CONTACT FORM */
+#contact-form {
+    background-color: transparent;
+    border-radius: 5px;
+    color: white;
+    padding: 15px;
+
+}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 10px;
+
+}
+
+input[type=submit] {
+    width: 100%;
+    border-radius: 10px;
+    background-color: var(--faded-blue);
+    color: white;
+    padding: 10px;
+    border: none;
+}
+
+input[type=submit]:hover {
+    background-color: var(--faded-blue-opacity-low);
+}
